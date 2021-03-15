@@ -4,7 +4,7 @@
 node_modules
 /node_modules
 ./server/node_modules
-./meee-app/node_modules
+./client/node_modules
 /.pnp
 .pnp.js
 
