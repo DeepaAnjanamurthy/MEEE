@@ -1,0 +1,115 @@
+
+[
+	{
+        "id" : 7 ,
+        "name": "Chakra 7 - Crown chakra",
+        "image": "",
+        "sanskritname": "Sahasrara",
+        "element": "Thought, understanding",
+        "function": "Understanding",
+        "bodyparts":"Pituitary gland, Cerebral cortex, Central nervous system",
+        "malfunction":"Depression, alienation, confusion, boredom, apathy, inability to learn or comprehend",
+
+        "videoids":[
+            {"15min": "WMJ8ZyQuOxQ"},
+            {"30min": "Mrr4dK5Nja0"},
+            {"60min": "vq4TZexuG9Y"}
+        ]
+    },
+
+	{
+    "id" : 6,
+    "name": "Chakra 6 - Brow chakra",
+    "image": "",
+    "sanskritname": "Ajna",
+    "element": "Light",
+    "function": "Seeing, intuiting",
+    "bodyparts":"Eyes, Pineal gland",
+    "malfunction":"Blindness, headaches, nightmares, eyestrain, blurred vision",
+        "videoids":[
+            {"15min": "KtIYER-TUr8"},
+            {"30min": "e7bG7-KTi2c"},
+            {"60min": "KTwTX60yhfw"}
+        ]
+    },
+
+    {
+        "id" : 5,
+        "name": "Chakra 5 - Throat chakra",
+        "image": "",
+        "sanskritname": "Vishuddha",
+        "element": "Sounds",
+        "function": "Communication, creativity",
+        "bodyparts":"Neck, shoulders, arms, hands, thyroid gland, parathyroid gland",
+        "malfunction":"Sore throat, stiff neck, colds, thyroid problems, hearing problems",
+        "videoids":[
+            {"15min": "DY3ROsPyw68"},
+            {"30min": "y5YFSXiesCQ"},
+            {"60min": "rHNwxokBMgE"}
+        ]
+    },
+
+    {
+        "id" : 4,
+        "name": "Chakra 4 - Heart chakra",
+        "image": "",
+        "sanskritname": "Anahata",
+        "element": "Air",
+        "function": "Love",
+        "bodyparts":"Thymus gland, lungs, heart, arms, hands",
+        "malfunction":"Asthma, high blood pressure, heart disease, lung disease",
+        "videoids":[
+            {"15min": "uvpPO9fmC_I"},
+            {"30min": "mFADY5TF2b0"},
+            {"60min": "9g77z9WAMkU"}
+        ]
+    },
+
+    {
+        "id" : 3,
+        "name": "Chakra 3 - Solar plexus chakra",
+        "image": "",
+        "sanskritname": "Manipura",
+        "element": "Fire",
+        "function": "Will, power",
+        "bodyparts":"Pancreas, adrenals, digestive system, muscles",
+        "malfunction":"Ulcers, diabetes, hypoglycemia",
+        "videoids":[
+            {"15min": "XEenfsm92M4"},
+            {"30min": "1b7NbeHm710"},
+            {"60min": "t3xI5aL4Z7Y"}
+        ]
+    },
+
+    {
+        "id" : 2,
+        "name": "Chakra 2 - Sacral chakra",
+        "image": "",
+        "sanskritname": "Swadhisthana",
+        "element": "Water",
+        "function": "Desire, pleasure, sexuality, procreation",
+        "bodyparts":"Ovaries, testicles, womb, genitals, kidney, bladder, circulatory system",
+        "malfunction":"Impotence, frigidity, uterine, bladder or kidney trouble, stiff low back",
+        "videoids":[
+            {"15min": "OONFKPHEgYY"},
+            {"30min": "J3Nn4KyVna8"},
+            {"60min": "QSrFajsixcM"}
+            ]
+    },
+
+    {
+        "id" : 1,
+        "name": "Chakra 1 - Root chakra",
+        "image": "",
+        "sanskritname": "Muladhara",
+        "element": "Earth",
+        "function": "Survival, grounding",
+        "bodyparts":"Adrenals, legs, feet, bones, large intestine",
+        "malfunction":"Obesity, hemorrhoids, constipation, sciatica, degenerative arthritis, anorexia nervosa, knee troubles",
+        "videoids":[
+            {"15min": "ZXiNRJoiOfw"},
+            {"30min": "fyAREUfq_Gk"},
+            {"60min": "kYfAM9KhUDM"}
+        ]
+    }
+]
