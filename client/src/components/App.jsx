@@ -10,6 +10,7 @@ function App() {
           <img className="mainimage" src={chakraImg} alt="seven chakras"/>
           <div className="login__container">
               <h2 className="login__form-header">Login to begin</h2>
+            
             <form className="login__form">
               <h3 className="login__form-label">User Name</h3>
               <input className="login__form-uname" type="text" placeholder="User Name"/>

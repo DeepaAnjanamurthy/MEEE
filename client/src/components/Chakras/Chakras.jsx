@@ -31,30 +31,46 @@ function Chakras() {
                         </div>
                     </Link>
 
-                    <div className="imglabeldiv">
-                        <img className="browimage chakra" src={browImg} alt="brow chakra"/>
-                        <p className="chakralabel">chakra 6 - Brow chakra</p>
-                    </div>
-                    <div className="imglabeldiv">
-                        <img className="throatimage chakra" src={throatImg} alt="throat chakra"/>    
-                        <p className="chakralabel">chakra 5 - Throat chakra</p>
-                    </div>
-                    <div className="imglabeldiv">
-                        <img className="heartimage chakra" src={heartImg} alt="heart chakra"/>    
-                        <p className="chakralabel">chakra 4 - Heart chakra</p>
-                    </div>
-                    <div className="imglabeldiv">
-                        <img className="solarimage chakra" src={solarImg} alt="solar chakra"/>
-                        <p className="chakralabel">chakra 3 - Solar chakra</p>
-                    </div>
-                    <div className="imglabeldiv">
-                        <img className="sacralimage chakra" src={sacralImg} alt="sacral chakra"/>
-                        <p className="chakralabel">chakra 2 - Sacral chakra</p>
-                    </div>
-                    <div className="imglabeldiv">
-                        <img className="roottimage chakra" src={rootImg} alt="root chakra"/>
-                        <p className="chakralabel">chakra 1 - Root chakra</p>
-                    </div>
+                    <Link to={"/chakra/6"}>
+                        <div className="imglabeldiv">
+                            <img className="browimage chakra" src={browImg} alt="brow chakra"/>
+                            <p className="chakralabel">chakra 6 - Brow chakra</p>
+                        </div>
+                    </Link>
+
+                    <Link to={"/chakra/5"}>
+                        <div className="imglabeldiv">
+                            <img className="throatimage chakra" src={throatImg} alt="throat chakra"/>    
+                            <p className="chakralabel">chakra 5 - Throat chakra</p>
+                        </div>
+                    </Link>
+
+                    <Link to={"/chakra/4"}>
+                        <div className="imglabeldiv">
+                            <img className="heartimage chakra" src={heartImg} alt="heart chakra"/>    
+                            <p className="chakralabel">chakra 4 - Heart chakra</p>
+                        </div>
+                    </Link> 
+                    
+                    <Link to={"/chakra/3"}>
+                        <div className="imglabeldiv">
+                            <img className="solarimage chakra" src={solarImg} alt="solar chakra"/>
+                            <p className="chakralabel">chakra 3 - Solar chakra</p>
+                        </div>
+                    </Link> 
+                    
+                    <Link to={"/chakra/2"}>
+                        <div className="imglabeldiv">
+                            <img className="sacralimage chakra" src={sacralImg} alt="sacral chakra"/>
+                            <p className="chakralabel">chakra 2 - Sacral chakra</p>
+                        </div>
+                    </Link> 
+                    <Link to={"/chakra/1"}>
+                        <div className="imglabeldiv">
+                            <img className="roottimage chakra" src={rootImg} alt="root chakra"/>
+                            <p className="chakralabel">chakra 1 - Root chakra</p>
+                        </div>
+                    </Link> 
                 </div>
             </div>
         </div>

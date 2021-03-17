@@ -5,62 +5,92 @@ import './Meditate.scss';
 import backIcon from '../../assets/icons/left-arrow.png';
 import crownImg from '../../assets/images/crown.png';
 
-function Meditate(props) {
+import axios from 'axios';
+
+class Meditate extends React.Component {
+
+    state={
+        content:[],
+    }
 // console.log(props.match.params);
 
+getChakraInfo = () => {
+    axios
+    .get(`http://localhost:8080/chakras/${this.props.match.params.id}`)
+    .then((response) => {
+    //   console.log(response.data);
+      this.setState({
+        content: response.data
+      });
+    })
+    .catch((error) => console.log(error));
+  }
+
+  componentDidMount(){
+      this.getChakraInfo();
+  }
+
+render(){
+    // console.log(this.state.content);
     return (
-        <div>
-            <div className="pagetitle">
-                <Link to={"/welcome"}>
-                    <img className="backicon" src={backIcon} alt="back icon"/>
-                </Link>
-                <h2 className="pageheading">Meditate</h2>
-            </div>
-            <div className="container">
-                <div className="chakracard">
-                    <h2 className="chakraheading">Crown Chakra</h2>
-                    <img className="chakraimg" src={crownImg} alt="charka img"/>
-                    <div className="chakrainfo">
-                        <div>
-                            <h2 className="chakralabels">Sanskrit Name</h2>
-                            <p className="chakrapara">Sahasrara</p>
-                        </div>
-                        <div>
-                            <h2 className="chakralabels">Element</h2>
-                            <p className="chakrapara">Thought</p>
-                        </div>
-                        <div>
-                            <h2 className="chakralabels">Function</h2>
-                            <p className="chakrapara">Understanding</p>
-                        </div>
-                        <div>
-                            <h2 className="chakralabels">Related Body Parts</h2>
-                            <p className="chakrapara">Pituitary, Cerebral cortex, Central nervous system</p>
-                        </div>
-                        <div>
-                            <h2 className="chakralabels">Malfunction</h2>
-                            <p className="chakrapara">Depression, alienation, confusion, boredom, apathy, inability to learn or comprehend</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="options">
-                    <Link to={`/chakra/${props.match.params.id}/WMJ8ZyQuOxQ`}>
-                        <div className="optioncard">
-                            <h2>Meditate for 15 minutes</h2>
-                        </div>
-                    </Link>    
-                    <Link to={`/chakra/${props.match.params.id}/Mrr4dK5Nja0`}>
-                    <div className="optioncard">
-                        <h2>Meditate for 30 minutes</h2>
-                    </div>
-                    </Link>
-                    <div className="optioncard">
-                        <h2>Meditate for 60 minutes</h2>
-                    </div>
-            </div>
-            </div>
-        </div>
-    )
+          <div>
+              <div className="pagetitle">
+                  <Link to={"/welcome"}>
+                      <img className="backicon" src={backIcon} alt="back icon"/>
+                  </Link>
+                  <h2 className="pageheading">Meditate</h2>
+              </div>
+              <div className="container">
+                  <div className="chakracard">
+                      <h2 className="chakraheading">{this.state.content.name}</h2>
+                      <img className="chakraimg" src={crownImg} alt="charka img"/>
+                      <div className="chakrainfo">
+                          <div>
+                              <h2 className="chakralabels">Sanskrit Name</h2>
+                              <p className="chakrapara">{this.state.content.sanskritname}</p>
+                          </div>
+                          <div>
+                              <h2 className="chakralabels">Element</h2>
+                              <p className="chakrapara">{this.state.content.element}</p>
+                          </div>
+                          <div>
+                              <h2 className="chakralabels">Function</h2>
+                              <p className="chakrapara">{this.state.content.function}</p>
+                          </div>
+                          <div>
+                              <h2 className="chakralabels">Related Body Parts</h2>
+                              <p className="chakrapara">{this.state.content.bodyparts}</p>
+                          </div>
+                          <div>
+                              <h2 className="chakralabels">Malfunction</h2>
+                              <p className="chakrapara">{this.state.content.malfunction}</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div className="options">
+                      <Link to={`/meditatechakra/${this.props.match.params.id}/WMJ8ZyQuOxQ`}>
+                      {/* <Link to={`/meditatechakra/${this.props.match.params.id}/${this.state.content.videoids.15min}`}> */}
+                      {/* <Link to={`/meditatechakra/7/WMJ8ZyQuOxQ`}> */}
+                          <div className="optioncard">
+                              <h2>Meditate for 15 minutes</h2>
+                          </div>
+                      </Link>    
+                      <Link to={`/meditatechakra/${this.props.match.params.id}/Mrr4dK5Nja0`}>
+                          <div className="optioncard">
+                              <h2>Meditate for 30 minutes</h2>
+                          </div>
+                      </Link>
+  
+                      <Link to={`/meditatechakra/${this.props.match.params.id}/vq4TZexuG9Y`}>
+                          <div className="optioncard">
+                              <h2>Meditate for 60 minutes</h2>
+                          </div>
+                      </Link>
+              </div>
+              </div>
+          </div>
+      )
+  }
 }
 
 export default Meditate

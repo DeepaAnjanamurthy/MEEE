@@ -9,27 +9,20 @@ function loadChakras(){
 // Route to get all chakras
 router.get("/", (req, res) => {
     const chakras = JSON.parse(loadChakras());
-
-    const chakrasMapped = chakras.map((chakra) => {
-        return{
-            id: chakra.id,
-            // title: video.title,
-            // image: video.image,
-            // channel: video.channel,
-        };
-    });
-    // res.json(videos);
-    res.json(chakrasMapped);
+    res.json(chakras);
 });
 
 // Route to get single chakra id
 router.get("/:id", (req,res)=> {
+    // console.log(req.params.id);
     const chakras = JSON.parse(loadChakras());
-    const foundChakraIndex = chakras.findIndex((chakra) =>{
-        return chakra.id === req.params.id;
-    });
+    const foundChakra = chakras.find((chakra) =>
+        chakra.id == req.params.id
+    );
+    // console.log(chakras.filter(chakra=>(chakra.id === req.params.id)));
+    // console.log(foundChakra);
     // console.log('foundVideoIndex', foundVideoIndex);
-    res.json(chakra[foundChakraIndex]);
+    res.json(foundChakra);
 });
 
 module.exports = router;

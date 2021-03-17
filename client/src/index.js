@@ -5,26 +5,26 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import App from './components/App';
 import Navbar from './components/Appnav/Navbar';
 import Chakras from './components/Chakras/Chakras';
-import Videoplayer from './components/Videoplayer/Videoplayer';
+// import Videoplayer from './components/Videoplayer/Videoplayer';
 import Meditate from './components/Meditate/Meditate';
-
+import Meditatechakra from './components/Meditate/Meditatechakra';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
         <Navbar/>
       <Switch>
-        {/* <App /> */}
         <Route path="/" component={App} exact />
         <Route exact path="/welcome" component={Chakras}  />
-        <Route path="/chakra/:id/:id" component={Videoplayer} />
+        <Route path="/meditatechakra/:id/:id" component={Meditatechakra} />
+        {/* <Route path="/chakra/:id/:id" component={Videoplayer} /> */}
         <Route path="/chakra/:id" component={Meditate} />
         <Route path="/*">
           <Redirect to="/" />
         </Route>
       </Switch>
-    </Router>
     {/* <Footer/> */}
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

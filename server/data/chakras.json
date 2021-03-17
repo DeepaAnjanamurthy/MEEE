@@ -1,15 +1,13 @@
-
 [
 	{
         "id" : 7 ,
-        "name": "Chakra 7 - Crown chakra",
-        "image": "",
+        "name": "Crown chakra",
+        "image": "./assets/images/crown.png",
         "sanskritname": "Sahasrara",
         "element": "Thought, understanding",
         "function": "Understanding",
         "bodyparts":"Pituitary gland, Cerebral cortex, Central nervous system",
         "malfunction":"Depression, alienation, confusion, boredom, apathy, inability to learn or comprehend",
-
         "videoids":[
             {"15min": "WMJ8ZyQuOxQ"},
             {"30min": "Mrr4dK5Nja0"},
@@ -19,7 +17,7 @@
 
 	{
     "id" : 6,
-    "name": "Chakra 6 - Brow chakra",
+    "name": "Brow chakra",
     "image": "",
     "sanskritname": "Ajna",
     "element": "Light",
@@ -35,7 +33,7 @@
 
     {
         "id" : 5,
-        "name": "Chakra 5 - Throat chakra",
+        "name": "Throat chakra",
         "image": "",
         "sanskritname": "Vishuddha",
         "element": "Sounds",
@@ -51,7 +49,7 @@
 
     {
         "id" : 4,
-        "name": "Chakra 4 - Heart chakra",
+        "name": "Heart chakra",
         "image": "",
         "sanskritname": "Anahata",
         "element": "Air",
@@ -67,7 +65,7 @@
 
     {
         "id" : 3,
-        "name": "Chakra 3 - Solar plexus chakra",
+        "name": "Solar plexus chakra",
         "image": "",
         "sanskritname": "Manipura",
         "element": "Fire",
@@ -83,7 +81,7 @@
 
     {
         "id" : 2,
-        "name": "Chakra 2 - Sacral chakra",
+        "name": "Sacral chakra",
         "image": "",
         "sanskritname": "Swadhisthana",
         "element": "Water",
@@ -99,7 +97,7 @@
 
     {
         "id" : 1,
-        "name": "Chakra 1 - Root chakra",
+        "name": "Root chakra",
         "image": "",
         "sanskritname": "Muladhara",
         "element": "Earth",
