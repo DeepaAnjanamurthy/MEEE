@@ -3,7 +3,9 @@ import YouTube from 'react-youtube';
 
 
 class Videoplayer extends React.Component{
-    render() {
+  
+  render() {
+        console.log(this.props.match.params);
         const opts = {
           height: '300',
           width: '500',
@@ -13,7 +15,9 @@ class Videoplayer extends React.Component{
           },
         };
         
-        return <YouTube videoId="WaeSdmXPzIM" opts={opts} onReady={this._onReady} />;
+        return <YouTube videoId={this.props.match.params.id} opts={opts} onReady={this._onReady} />;
+        
+        
         // return <YouTube videoId="IoGH3Cw1xIs" opts={opts} onReady={this._onReady} />;
       }
     

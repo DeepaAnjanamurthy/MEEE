@@ -20,6 +20,10 @@
     height: 45px;
 }
 
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
 .chakracard{
     margin: 2rem 2rem;
     padding: 1rem 1rem;
@@ -56,4 +60,16 @@
 
 .chakralabels{
     font-size: 1.3rem;
+}
+
+.optioncard{
+    margin: 2rem 2rem;
+    padding: 1rem 1rem;
+    color: $primary-font;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 5px rgba(20, 59, 166, .3);
+    background-color: $sec-color;
+    width: 80%;
 }
