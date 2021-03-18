@@ -16,13 +16,18 @@ function Chakras() {
     return (
         <div className="">
             {/* conditionally render user name */}
-            <h3 className="loggedinuser">Welcome _username_!</h3>
+            <div className="useroptions">
+                <h3 className="loggedinuser">Welcome _username_!</h3>
+                <div className="viewprogress">
+                    <button className="cardbtn">View my progress</button>
+                </div>
+            </div>
             
             <div className="chakraspage">
                 <img className="chakrasimage" src={chakrasImg} alt="seven chakras"/>
 
                 <div className="chakrasnames">
-                    <h3 className="linksheading">Click on a chakra below to meditate or learn more</h3>
+                    <h3 className="linksheading">Click on a chakra to meditate or learn more</h3>
                     
                     <Link to={"/chakra/7"}>
                         <div className="imglabeldiv">

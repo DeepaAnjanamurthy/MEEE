@@ -1,0 +1,109 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+@import '../../styles/general';
+
+// Meditate chakra component styling
+.medpagetitle{
+    // margin-top: 1rem;
+    // padding-left: 2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.videoplayer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0 1rem 0;
+}
+
+.completecard{
+    margin: 0rem 2rem 2rem 2rem;
+    padding: 1rem 1rem;
+    
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 5px rgba(20, 59, 166, .3);
+    background-color: $sec-color;
+    width: 88%;
+}
+
+.progresscard{
+    margin: 2rem 2rem;
+    padding: 1rem 1rem;
+    color: $primary-font;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 5px rgba(20, 59, 166, .3);
+    background-color: $sec-color;
+    width: 30%;
+}
+
+.cardbtn{
+    color: $primary-font;
+    font-weight: bold;
+    background-color: $sec-color;
+    font-size: 1.2rem;
+    border:none;
+}
+
+.meditatechakra{
+    padding: 1rem 2rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // display: inline-flex;
+}
+
+.experience{
+    margin-left: 2rem;
+    // padding: 1rem 1rem;
+    color: $primary-font;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 5px rgba(20, 59, 166, .3);
+    background-color: $sec-color;
+}
+
+.experiencelabel{
+    margin: 1rem 0;
+    // justify-content: right;
+    font-size: 1.2rem;    
+}
+.exptext{
+    width: 210px;
+    height: 100px;
+    resize: none; 
+    border-radius: 0.313rem;
+    padding: 0.7rem 0 0.7rem 0.7rem;
+    font-size: 1rem;
+    font-family: $primary-font-family, Arial, Helvetica, sans-serif;
+}
+
+.form__btn{
+    background-color: $border-color;
+    color: $sec-color;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    height: 2.7rem;
+    width:  30%;
+    border-radius: 25px ;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.form__btns{
+    // margin-top: 2rem;
+    width: 90%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.cbtn{
+    margin-right: 1rem;
+    background-color: darkred;
+}

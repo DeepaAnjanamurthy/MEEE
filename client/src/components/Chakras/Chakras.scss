@@ -5,9 +5,27 @@
 .loggedinuser{
     padding: 1.5rem 0 0 1rem;
 }
+
+.useroptions{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.viewprogress{
+    margin: 1rem 7rem 0 2rem;
+    padding: 1rem 1rem;
+    color: $primary-font;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 5px rgba(20, 59, 166, .3);
+    background-color: $sec-color;
+    width: 30%;
+}
 .chakraspage{
     display: flex;
-    // justify-content: space-evenly;
+    justify-content: space-evenly;
     padding: 0 1rem 0 1rem;
 }
 
@@ -18,6 +36,7 @@
 
 .chakrasnames{
     padding: 2rem 0 0 2rem;
+    width: 45%;
 }
 
 .chakralabel{
@@ -32,7 +51,7 @@
 // }
 
 .chakra{
-    width: 10%;
+    width: 12%;
 }
 
 .imglabeldiv{
