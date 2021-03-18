@@ -6,15 +6,23 @@ import './Meditatechakra.scss';
 
 import backIcon from '../../assets/icons/left-arrow.png';
 
-function Meditatechakra(props) {
+class Meditatechakra extends React.Component{
     // console.log(props);
-    const isClicked = 0;
     // console.log(isClicked);
+    state = {
+        isClicked: 0
+    }
 
-    // handleToggleClick =() =>{
-    //     isClicked = 1;
-    //     console.log(isClicked);
-    // }
+   handleToggleClick(){
+       this.setState({isClicked: !this.state.isClicked}) 
+    }
+
+    // text input handler
+    handleChange =()=>{
+
+    }
+
+    render(){
     return (
         <div className="meditatechakra">
             <div>
@@ -31,38 +39,29 @@ function Meditatechakra(props) {
             </div>
             <div className="videoplayer">
                 <Videoplayer
-                    videoId={props.match.params.id}
+                    videoId={this.props.match.params.id}
                 />
                 <div className="cards">
                     <div className="completecard">
-                    <button className="cardbtn" >Meditation Complete
-                        {/* <button className="cardbtn" onClick={handleToggleClick}>Meditation Complete */}
-                        {isClicked 
-                        ?  <form className="experience">
+                        <button className="cardbtn" onClick={()=>this.handleToggleClick()}>Meditation Complete</button>
+                    </div>
+                    {this.state.isClicked ?  
+                            <form className="experience">
                                 <h4 className="experiencelabel">After meditation, I feel... </h4>
-                                <textarea className="exptext" placeholder="Write how you feel here" > </textarea>
+                                <textarea className="exptext" placeholder="Write how you feel here" onChange="" value="" > </textarea>
                                 <div className="form__btns">
                                     <button className="form__btn cbtn">Cancel</button>
                                     <button className="form__btn">Save</button>
                                 </div>
                             </form> 
-                        : <></>
-                        } 
-                        </button>
-                    </div>
-                    
-                    {/* <form className="experience">
-                    <h4 className="experiencelabel">After meditation, I feel... </h4>
-                            <textarea className="exptext" placeholder="Write how you feel here" > </textarea>
-                            <div className="form__btns">
-                                <button className="form__btn cbtn">Cancel</button>
-                                <button className="form__btn">Save</button>
-                            </div>
-                    </form> */}
+                        : 
+                        null
+                        }         
                 </div>
             </div>
         </div>
-    )
+    );
+    }
 }
 
 export default Meditatechakra

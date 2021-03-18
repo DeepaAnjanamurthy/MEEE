@@ -15,7 +15,7 @@ function App() {
               <h3 className="login__form-label">User Name</h3>
               <input className="login__form-uname" type="text" placeholder="User Name"/>
               <h3 className="login__form-label">Password</h3>
-              <input className="login__form-password" type="text" placeholder="Password"/>
+              <input className="login__form-password" type="password" placeholder="Password"/>
               <div className="btns">
                 <button className="login__form-btn cbtn">Cancel</button>
 

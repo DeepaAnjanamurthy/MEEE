@@ -4,6 +4,18 @@
         "timestamp": 1616053600000,
         "chakra": 7,
         "Note": "feel energised after session"
+    },
+    {
+        "id": 1,
+        "timestamp": 1616054733000,
+        "chakra": 4,
+        "Note": "feel relaxed"
+    },
+    {
+        "id": 1,
+        "timestamp": 1616055671000,
+        "chakra": 3,
+        "Note": "excellent session"
     }
     
 ]
