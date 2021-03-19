@@ -10,7 +10,8 @@ class Meditatechakra extends React.Component{
     // console.log(props);
     // console.log(isClicked);
     state = {
-        isClicked: 0
+        isClicked: 0,
+        value: ''
     }
 
    handleToggleClick(){
@@ -18,8 +19,8 @@ class Meditatechakra extends React.Component{
     }
 
     // text input handler
-    handleChange =()=>{
-
+    handleChange =(event)=>{
+        this.setState({value: event.target.value});
     }
 
     render(){
@@ -48,7 +49,10 @@ class Meditatechakra extends React.Component{
                     {this.state.isClicked ?  
                             <form className="experience">
                                 <h4 className="experiencelabel">After meditation, I feel... </h4>
-                                <textarea className="exptext" placeholder="Write how you feel here" onChange="" value="" > </textarea>
+                                <textarea className="exptext" placeholder="Write how you feel here" 
+                                    onChange={this.handleChange} 
+                                    value={this.state.value} >
+                                </textarea>
                                 <div className="form__btns">
                                     <button className="form__btn cbtn">Cancel</button>
                                     <button className="form__btn">Save</button>

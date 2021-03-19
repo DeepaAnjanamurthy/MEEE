@@ -82,7 +82,7 @@
     {
         "id" : 2,
         "name": "Sacral chakra",
-        "image": "",
+        "image": "/images/solar.png",
         "sanskritname": "Swadhisthana",
         "element": "Water",
         "function": "Desire, pleasure, sexuality, procreation",
