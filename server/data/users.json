@@ -1,17 +1,12 @@
-[ 
-    { 
-        "id": 1,
-        "username": "yoda", 
-        "password": "1234" 
-    }, 
-    { 
-        "id": 2,
-        "username": "panda",
-        "password": "1234" 
-    }, 
-    { 
-        "id": 3,
-        "username": "jedi",
-        "password": "1234"
-    } 
+[
+  {
+    "id": "1",
+    "username": "test",
+    "password": "$2b$10$FZPOgpdtDOuW3Oo9OnZDZO8PYp6QttumWclnjX7B4AIovkeK.8mKq"
+  },
+  {
+    "id": "2",
+    "username": "yoda",
+    "password": "$2b$10$zEpsq179sQxlH26oUKtkieRdk4hoC6FVRoNxc64nC1F.86omfNLOu"
+  }
 ]

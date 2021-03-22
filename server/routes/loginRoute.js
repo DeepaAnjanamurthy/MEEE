@@ -3,12 +3,13 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
+require('dotenv').config();
+
 const JWT_KEY= process.env.JWT_KEY;
 
 router.get("/", (req,res) =>{
     res.json('get login route hit');
 });
-
 
 const user = {name: "test", password: "test" };
 

@@ -14,6 +14,7 @@ import Meditate from "./Meditate/Meditate";
 import Meditatechakra from "./Meditate/Meditatechakra";
 import Navbar from "./Appnav/Navbar";
 import Chakras from "./Chakras/Chakras";
+import Viewprogress from './ViewProgress/Viewprogress';
 
 const apiUrl = "http://localhost:8080";
 
@@ -103,6 +104,7 @@ class App extends Component {
           )}
           </Route>
           {/* <Route exact path="/welcome" component={Chakras} /> */}
+          <Route path="/viewprogress" component={Viewprogress} />
           <Route path="/meditatechakra/:id/:id" component={Meditatechakra} />
           <Route path="/chakra/:id" component={Meditate} />
           <Route path="/*">

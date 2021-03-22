@@ -18,9 +18,12 @@ function Chakras() {
             {/* conditionally render user name */}
             <div className="useroptions">
                 <h3 className="loggedinuser">Welcome _username_!</h3>
-                <div className="viewprogress">
-                    <button className="cardbtn">View my progress</button>
-                </div>
+                
+                <Link to={"/viewprogress"}>
+                    <div className="viewprogress">
+                        <button className="cardbtn">View my progress</button>
+                    </div>
+                </Link>
             </div>
             
             <div className="chakraspage">

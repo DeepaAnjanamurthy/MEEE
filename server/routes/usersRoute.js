@@ -5,10 +5,6 @@ const fs = require('fs');
 
 const JWT_KEY= process.env.JWT_KEY;
 
-function loadUsers(){
-    return fs.readFileSync("./data/users.json", "utf8");
-}
-
 // create a .get route for a user
 router.get("/",
     (req, res) =>{

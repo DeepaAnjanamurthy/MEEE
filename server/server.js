@@ -9,7 +9,6 @@ const chakrasRoute = require('./routes/chakrasRoute');
 const notesRoute = require('./routes/notesRoute');
 const usersRoute = require('./routes/usersRoute');
 const loginRoute = require('./routes/loginRoute');
-const helloRoute = require('./routes/helloRoute');
 const userAuth = require('./routes/userAuth');
 
 require('dotenv').config();
@@ -19,7 +18,6 @@ const { PORT, JWT_KEY } = process.env;
 // const JWT_KEY = process.env.JWT_KEY;
 
 
-// app.use(morgan('dev'));
 app.use(cors());
 app.use(express.static('public'));
 app.use(express.json());
@@ -28,9 +26,8 @@ app.use(express.json());
 app.use('/chakras', chakrasRoute);
 app.use('/notes', notesRoute);
 app.use('/user', usersRoute);
-app.use('hello', helloRoute);
-app.use('./userAuth', userAuth);
-// app.use('./login', loginRoute);
+app.use('/userAuth', userAuth);
+app.use('/login', loginRoute);
 
 
 app.get('/', (req, res)=>{
@@ -38,6 +35,8 @@ app.get('/', (req, res)=>{
         greeting: "Welcome to my API!"
     });
 });
+
+app.listen(PORT, console.log(`Server listening at: http://localhost:${PORT}`));
 
 // const user = {name: "test", password: "test" }
 // app.route('/login')
@@ -79,4 +78,3 @@ app.get('/', (req, res)=>{
 
 
 
-app.listen(PORT, console.log(`Server listening at: http://localhost:${PORT}`));
