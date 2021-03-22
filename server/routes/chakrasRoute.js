@@ -19,9 +19,6 @@ router.get("/:id", (req,res)=> {
     const foundChakra = chakras.find((chakra) =>
         chakra.id == req.params.id
     );
-    // console.log(chakras.filter(chakra=>(chakra.id === req.params.id)));
-    // console.log(foundChakra);
-    // console.log('foundVideoIndex', foundVideoIndex);
     res.json(foundChakra);
 });
 
