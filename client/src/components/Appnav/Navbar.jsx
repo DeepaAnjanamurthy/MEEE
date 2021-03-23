@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.scss';
+import logo from '../../assets/images/logo.png';
 
 function Navbar(props) {
     console.log(props);
@@ -8,7 +9,8 @@ function Navbar(props) {
         <div className="navbar">
             <div>
                 <Link className="logolink" to={"/"}>
-                    <h1 className="navbar__logo">Meee</h1>
+                    <img className="imglogo" src={logo} alt="site logo"/>
+                    {/* <h1 className="navbar__logo">Meee</h1> */}
                 </Link>
             </div>
             <div className="navbar__links">
@@ -21,7 +23,7 @@ function Navbar(props) {
                 ? 
                     <button className="signout_btn">Sign Out</button>
                 : 
-                <h3> Register ||</h3>
+                <h3 className="register"> Register ||</h3>
                 }
                 
             </div>

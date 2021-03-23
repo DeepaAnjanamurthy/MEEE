@@ -85,7 +85,7 @@ class App extends Component {
                     <input
                       className="login__form-uname"
                       type="text"
-                      placeholder="User Name"
+                      placeholder="username"
                       value={this.state.username}
                       onChange={this.handleChangeName}
                     />
@@ -93,7 +93,7 @@ class App extends Component {
                     <input
                       className="login__form-password"
                       type="password"
-                      placeholder="Password"
+                      placeholder="password"
                       value={this.state.password}
                       onChange={this.handleChangePwd}
                     />
