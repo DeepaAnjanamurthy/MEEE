@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.scss';
 
-function Navbar() {
+function Navbar(props) {
     return (
         <div className="navbar">
             <Link to={"/"}>

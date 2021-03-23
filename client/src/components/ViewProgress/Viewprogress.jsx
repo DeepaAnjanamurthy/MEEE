@@ -9,29 +9,40 @@ class Viewprogress extends Component {
     }
     
 componentDidMount(){
-    this.getUserNotes("1");
+    console.log("Viewprogress mount");
+    if(sessionStorage.authToken){
+        const token = sessionStorage.getItem("authToken");
+        this.getUserNotes("1", token);
+        console.log(token);
+    }
+
 }
-    getUserNotes = (id) => {
-        axios
-        .get(`${apiUrl}/notes/${id}`)
-        .then((response) => {
-        //   console.log(response)
-          console.log(response.data);   
-          this.setState({
-              notes:response.data
-          });   
-        })
-        .catch((error) => console.log(error));
-      }
+    getUserNotes = (id,token) => {
+
+            axios
+            .get(`${apiUrl}/notes/${id}`,{headers: {'Authorization': `Basic ${token}`}})
+            // .get(`${apiUrl}/notes/${id}`)
+            .then((response) => {
+            //   console.log(response)
+            //   console.log(response.data);   
+              this.setState({
+                  notes:response.data
+              });   
+            })
+            .catch((error) => console.log(error));
+        }
 
     render(){
 
         return (
 
-            <div>
+            <div className="viewprogress">
+                <div>
+
+                </div>
                 {this.state.notes
                 .map((notes) => (
-                    <li key={notes.id}>
+                    <li key={notes.noteid}>
                         <p>{notes.Note}</p>
                         <p>{notes.timestamp}</p>
                         <p>{notes.chakra}</p>

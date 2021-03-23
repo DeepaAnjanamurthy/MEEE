@@ -63,7 +63,8 @@ class App extends Component {
       <Router>
         {/* Send username, LoggedIn flag to Navbar Component */}
         <Navbar 
-        
+         userLoggedIn={this.state.userLoggedIn}
+        //  Pass function to logout and setstate
         />
         <Switch>
           <Route path="/" exact>

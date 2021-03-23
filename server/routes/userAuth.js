@@ -6,6 +6,8 @@ const bcrypt = require('bcrypt');
 
 require('dotenv').config();
 
+const { JWT_KEY } = process.env;
+
 function loadUsers(){
     return fs.readFileSync("./data/users.json", "utf8");
 }
@@ -40,11 +42,11 @@ router.post("/login", async (req,res) => {
     }
     try{
         if(await bcrypt.compare(req.body.password, user.password)){
-            res.send("username and password checked - success");
+            // res.send("username and password checked - success");
             // send token to browser
-            // const payload = {username: user.username};
-            // const token = jwt.sign(payload, JWT_KEY, {expiresIn: '1hr'});
-            // res.json({token});
+            const payload = {username: user.username};
+            const token = jwt.sign(payload, JWT_KEY, {expiresIn: '1hr'});
+            res.json({token});
             
         } else {
             res.send("Incorrect username or password, try again");

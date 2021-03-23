@@ -27,7 +27,7 @@ app.use('/chakras', chakrasRoute);
 app.use('/notes', notesRoute);
 app.use('/user', usersRoute);
 app.use('/userAuth', userAuth);
-app.use('/login', loginRoute);
+// app.use('/login', loginRoute);
 
 
 app.get('/', (req, res)=>{
@@ -38,22 +38,22 @@ app.get('/', (req, res)=>{
 
 app.listen(PORT, console.log(`Server listening at: http://localhost:${PORT}`));
 
-// const user = {name: "test", password: "test" }
-// app.route('/login')
-//     .post((req, res)=>{
-//         // Find user in users json file, if same as req data, send payload
-//         if(user.name === req.body.username && user.password === req.body.password){
-//             const payload ={
-//                 // username:req.body.username,
-//                 username: user.name
-//                 //  can use user avatar here, likes 
-//             }
-//             const token = jwt.sign(payload, JWT_KEY, {expiresIn: '1hr'});
-//             res.json({token});
-//         } else{
-//             res.json({message: "username and password not found "})
-//         }
-// })
+const user = {name: "test", password: "test" }
+app.route('/login')
+    .post((req, res)=>{
+        // Find user in users json file, if same as req data, send payload
+        if(user.name === req.body.username && user.password === req.body.password){
+            const payload ={
+                // username:req.body.username,
+                username: user.name
+                //  can use user avatar here, likes 
+            }
+            const token = jwt.sign(payload, JWT_KEY, {expiresIn: '1hr'});
+            res.json({token});
+        } else{
+            res.json({message: "username and password not found "})
+        }
+})
 
 
 // app.route('/user')

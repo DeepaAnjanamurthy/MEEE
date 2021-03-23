@@ -19,11 +19,11 @@ function Chakras() {
             <div className="useroptions">
                 <h3 className="loggedinuser">Welcome _username_!</h3>
                 
-                <Link to={"/viewprogress"}>
                     <div className="viewprogress">
+                <Link to={"/viewprogress"}>
                         <button className="cardbtn">View my progress</button>
-                    </div>
                 </Link>
+                    </div>
             </div>
             
             <div className="chakraspage">
