@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
-  Link,
+  // Link,
   Switch,
   Route,
   Redirect,
@@ -36,6 +36,7 @@ class App extends Component {
   // Upon clicking login button
   handleLogin = (event) => {
     event.preventDefault();
+    // form validation for empty username and password fields
     this.postUserData();
   }
   
@@ -64,12 +65,15 @@ class App extends Component {
         {/* Send username, LoggedIn flag to Navbar Component */}
         <Navbar 
          userLoggedIn={this.state.userLoggedIn}
+         
         //  Pass function to logout and setstate
         />
         <Switch>
           <Route path="/" exact>
             {this.state.userLoggedIn 
-                ? <Chakras />
+                ? <Chakras 
+                    username={this.state.username}           
+                  />
                 : (
             <div className="mainpage">
               <img className="mainimage" src={chakraImg} alt="seven chakras" />
@@ -95,9 +99,9 @@ class App extends Component {
                     />
                     <div className="btns">
                       <button className="login__form-btn cbtn">Cancel</button>
-                      <Link to={"/welcome"}>
+                      {/* <Link to={"/welcome"}> */}
                         <button className="login__form-btn" onClick={this.handleLogin} >Login</button>
-                      </Link>
+                      {/* </Link> */}
                     </div>
                   </form>
               </div>
