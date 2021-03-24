@@ -58,6 +58,12 @@ class App extends Component {
     .catch((error) => console.log(error));
   }
 
+  handleSignOut =() => {
+    sessionStorage.clear();
+    this.setState({
+      userLoggedIn: false
+    })
+  }
 
   render() {
     return (
@@ -65,7 +71,7 @@ class App extends Component {
         {/* Send username, LoggedIn flag to Navbar Component */}
         <Navbar 
          userLoggedIn={this.state.userLoggedIn}
-         
+         handleSignOut={this.handleSignOut}
         //  Pass function to logout and setstate
         />
         <Switch>

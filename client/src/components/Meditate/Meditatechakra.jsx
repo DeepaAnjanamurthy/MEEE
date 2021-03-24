@@ -15,7 +15,13 @@ class Meditatechakra extends React.Component{
     }
 
    handleToggleClick(){
-       this.setState({isClicked: !this.state.isClicked}) 
+       this.setState({isClicked: !this.state.isClicked})
+       var x = document.getElementById("hide");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         x.style.display = "none";
+       }
     }
 
     // text input handler
@@ -43,8 +49,8 @@ class Meditatechakra extends React.Component{
                     videoId={this.props.match.params.id}
                 />
                 <div className="cards">
-                    <div className="completecard">
-                        <button className="cardbtn btn" onClick={()=>this.handleToggleClick()}>Meditation Complete</button>
+                    <div className="completecard" id="hide">
+                        <button className="cardbtn btn "  onClick={()=>this.handleToggleClick()}>Meditation Complete</button>
                     </div>
                     {this.state.isClicked ?  
                             <form className="experience">

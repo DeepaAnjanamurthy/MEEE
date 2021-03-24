@@ -21,7 +21,9 @@ function Navbar(props) {
                 <h3>|  Contact  ||</h3>
                 {props.userLoggedIn 
                 ? 
-                    <button className="signout_btn btn">Sign Out</button>
+                <Link className="logolink" to={"/"}>
+                    <button className="signout_btn btn" onClick={ () => props.handleSignOut()}>Sign Out</button>
+                </Link>
                 : 
                 <h3 className="register"> Register ||</h3>
                 }
