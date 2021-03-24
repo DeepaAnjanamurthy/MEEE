@@ -54,8 +54,8 @@ class Meditatechakra extends React.Component{
                                     value={this.state.value} >
                                 </textarea>
                                 <div className="form__btns">
-                                    <button className="form__btn cbtn">Cancel</button>
-                                    <button className="form__btn">Save</button>
+                                    <button className="form__btn btn cbtn">Cancel</button>
+                                    <button className="form__btn btn">Save</button>
                                 </div>
                             </form> 
                         : 

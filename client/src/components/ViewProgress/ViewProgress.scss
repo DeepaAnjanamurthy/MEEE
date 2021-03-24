@@ -34,17 +34,20 @@
 }
 
 .progress__labels{
+    background-color: #D3DAA9;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 0.7rem;
 }
 
 .viewprogress__grid{
-    // display: grid;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
 
 .c-viewprogress__li{
+    border-bottom: 1px solid $border-color;
+    padding: 0.7rem 0.7rem;
     display: grid;
     grid-template-columns: auto auto auto auto;
     // display: flex;

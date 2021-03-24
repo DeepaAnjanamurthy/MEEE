@@ -13,13 +13,7 @@
     border-radius: 0 0 10px 10px;
     box-shadow: 0 5px 9px 5px rgba(20, 59, 166, .3);
 
-    &__logo{
-        color: $primary-font;
-        font-weight: lighter;
-        font-style: oblique;
-        font-size: 2.5rem;
-    }
-
+  
     &__links{
         display: inline-flex;
         padding: 0.5rem 0.5rem;
@@ -39,7 +33,6 @@
         border-radius: 25px ;
         background-color: #fafafa;
         font-family: $primary-font-family, Arial, Helvetica, sans-serif;
-        // font-family: '',  Arial, Helvetica, sans-serif;
     }
 }
 

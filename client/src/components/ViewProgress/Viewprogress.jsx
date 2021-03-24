@@ -1,11 +1,14 @@
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+
 import './Viewprogress.scss';
+import '../TimeStamp';
 
 import backIcon from '../../assets/icons/left-arrow.png';
 import deleteIcon from '../../assets/icons/delete-icon.svg';
 import editIcon from '../../assets/icons/edit-icon.svg';
+import TimeStamp from '../TimeStamp';
 
 const apiUrl = "http://localhost:8080";
 
@@ -59,7 +62,7 @@ componentDidMount(){
                         {this.state.notes 
                         .map((notes) => (
                             <li className="c-viewprogress__li" key={notes.noteid}>
-                                <p>{notes.timestamp}</p>
+                                <div><TimeStamp tmstamp={notes.timestamp} /></div>
                                 <p>{notes.chakra}</p>
                                 <p>{notes.Note}</p>
                                 <div className="action__icons">
