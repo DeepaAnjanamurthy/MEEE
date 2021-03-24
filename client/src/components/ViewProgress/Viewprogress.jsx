@@ -4,6 +4,8 @@ import axios from 'axios';
 import './Viewprogress.scss';
 
 import backIcon from '../../assets/icons/left-arrow.png';
+import deleteIcon from '../../assets/icons/delete-icon.svg';
+import editIcon from '../../assets/icons/edit-icon.svg';
 
 const apiUrl = "http://localhost:8080";
 
@@ -60,6 +62,10 @@ componentDidMount(){
                                 <p>{notes.timestamp}</p>
                                 <p>{notes.chakra}</p>
                                 <p>{notes.Note}</p>
+                                <div className="action__icons">
+                                    <img src={editIcon} alt="edit icon"/>
+                                    <img src={deleteIcon} alt="delete icon"/>
+                                </div>
                             </li>
                         ))}
                         {/* <Noteslist 
