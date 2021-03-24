@@ -23,6 +23,12 @@
     background-color: $sec-color;
     width: 30%;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
 .chakraspage{
     display: flex;
     justify-content: space-evenly;
@@ -40,7 +46,7 @@
 }
 
 .chakralabel{
-    font-size: 1rem;
+    font-size: 1.02rem;
     font-weight: bold;
     color: #323232;
     padding: 0.9rem 2.5rem;

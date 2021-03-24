@@ -44,7 +44,7 @@ class Meditatechakra extends React.Component{
                 />
                 <div className="cards">
                     <div className="completecard">
-                        <button className="cardbtn" onClick={()=>this.handleToggleClick()}>Meditation Complete</button>
+                        <button className="cardbtn btn" onClick={()=>this.handleToggleClick()}>Meditation Complete</button>
                     </div>
                     {this.state.isClicked ?  
                             <form className="experience">

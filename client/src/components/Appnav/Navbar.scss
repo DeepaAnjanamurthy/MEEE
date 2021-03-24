@@ -44,7 +44,7 @@
 }
 
 .imglogo{
-    height: 80px;
+    height: 70px;
 }
 .register{
     padding-left: 0.4rem;
@@ -58,6 +58,11 @@
     background-color: $sec-color;
     border: none;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
 .logolink{
     text-decoration: none;

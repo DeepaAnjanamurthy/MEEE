@@ -1,3 +1,49 @@
 @import '../../styles/variables';
 @import '../../styles/fonts';
 @import '../../styles/general';
+
+// html{
+//     display: flex;
+//     align-items: center;
+// }
+.container{
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+}
+
+.progress__pagetitle{
+    // margin-top: 1rem;
+    // padding-left: 2rem;
+    display: inline-flex;
+    align-items: center;
+}
+.c-viewprogress{
+    // margin: 1rem 7rem 0 2rem;
+    padding: 1rem 1rem;
+    color: $primary-font;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 5px rgba(20, 59, 166, .3);
+    background-color: $sec-color;
+    width: 80%;
+    list-style: none;
+}
+
+.progress__labels{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.viewprogress__grid{
+    // display: grid;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.c-viewprogress__li{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    // display: flex;
+}

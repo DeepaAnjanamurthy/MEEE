@@ -20,7 +20,7 @@ function Chakras(props) {
                 
                     <div className="viewprogress">
                 <Link to={"/viewprogress"}>
-                        <button className="cardbtn">View my progress</button>
+                        <button className="cardbtn btn">View my progress</button>
                 </Link>
                     </div>
             </div>

@@ -1,5 +1,9 @@
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './Viewprogress.scss';
+
+import backIcon from '../../assets/icons/left-arrow.png';
 
 const apiUrl = "http://localhost:8080";
 
@@ -9,11 +13,11 @@ class Viewprogress extends Component {
     }
     
 componentDidMount(){
-    console.log("Viewprogress mount");
+    // console.log("Viewprogress mount");
     if(sessionStorage.authToken){
         const token = sessionStorage.getItem("authToken");
         this.getUserNotes("1", token);
-        console.log(token);
+        // console.log(token);
     }
 
 }
@@ -35,26 +39,38 @@ componentDidMount(){
     render(){
 
         return (
-
-            <div className="viewprogress">
-                <div>
-
+            <div>
+                    <div className="progress__pagetitle">
+                        <Link to={"/"}>
+                            <img className="backicon" src={backIcon} alt="back icon"/>
+                        </Link>
+                        <h2 className="progress__pageheading">View Progress</h2>
+                    </div>
+                <div className="container">
+                    <div className="c-viewprogress">
+                        <div className="viewprogress__grid progress__labels">
+                            <p>DATE</p>
+                            <p>CHAKRA</p>
+                            <p>NOTE</p>
+                            <p>ACTION</p>
+                        </div>
+                        {this.state.notes 
+                        .map((notes) => (
+                            <li className="c-viewprogress__li" key={notes.noteid}>
+                                <p>{notes.timestamp}</p>
+                                <p>{notes.chakra}</p>
+                                <p>{notes.Note}</p>
+                            </li>
+                        ))}
+                        {/* <Noteslist 
+                            notes={this.state.notes}/> */}
+                        {/* <p>View progress component</p> */}
+                        {/* map returned array to display on the page */}
+                    </div>
                 </div>
-                {this.state.notes
-                .map((notes) => (
-                    <li key={notes.noteid}>
-                        <p>{notes.Note}</p>
-                        <p>{notes.timestamp}</p>
-                        <p>{notes.chakra}</p>
-                    </li>
-                ))}
-                {/* <Noteslist 
-                    notes={this.state.notes}/> */}
-                <p>View progress component</p>
-                {/* map returned array to display on the page */}
             </div>
-        )
-    }
+            )
+        }
 }
 
 export default Viewprogress

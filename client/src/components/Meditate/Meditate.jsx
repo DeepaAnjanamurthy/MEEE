@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import './Meditate.scss';
 import backIcon from '../../assets/icons/left-arrow.png';

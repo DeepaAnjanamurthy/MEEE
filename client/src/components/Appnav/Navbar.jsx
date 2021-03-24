@@ -4,7 +4,7 @@ import './Navbar.scss';
 import logo from '../../assets/images/logo.png';
 
 function Navbar(props) {
-    console.log(props);
+    // console.log(props);
     return (
         <div className="navbar">
             <div>
@@ -21,7 +21,7 @@ function Navbar(props) {
                 <h3>|  Contact  ||</h3>
                 {props.userLoggedIn 
                 ? 
-                    <button className="signout_btn">Sign Out</button>
+                    <button className="signout_btn btn">Sign Out</button>
                 : 
                 <h3 className="register"> Register ||</h3>
                 }
