@@ -57,7 +57,7 @@ componentDidMount(){
                             <p>DATE</p>
                             <p>CHAKRA</p>
                             <p>NOTE</p>
-                            <p>ACTION</p>
+                            <p>ACTIONS</p>
                         </div>
                         {this.state.notes 
                         .map((notes) => (
