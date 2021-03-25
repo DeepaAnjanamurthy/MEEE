@@ -44,8 +44,6 @@ class App extends Component {
   // post request to check for user credentials
   postUserData = () => {
     axios
-    // .post(`${apiUrl}/login`, {username: "test", password: "test"})
-    // .post(`${apiUrl}/login`)
     .post(`${apiUrl}/userAuth/login`, 
       {
         username: this.state.username,
@@ -57,8 +55,6 @@ class App extends Component {
       console.log(response)
       // console.log(response.data);      
       this.setState({
-        // username: response.data.username,
-        // password: response.data.password,
         userLoggedIn: true
       });
     })
@@ -68,7 +64,9 @@ class App extends Component {
   handleSignOut =() => {
     sessionStorage.clear();
     this.setState({
-      userLoggedIn: false
+      userLoggedIn: false,
+      username: '',
+      password: ''
     })
   }
 
