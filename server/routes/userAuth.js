@@ -47,11 +47,9 @@ router.post("/login", async (req,res) => {
             const payload = {username: user.username};
             const token = jwt.sign(payload, JWT_KEY, {expiresIn: '1hr'});
             res.json({token});
-            
         } else {
             res.send("Incorrect username or password, try again");
         }
-        
     }
     catch{
         res.status(500).send("server error");

@@ -13,10 +13,11 @@ import rootImg from '../../assets/images/root.png';
 
 
 function Chakras(props) {
+    // console.log(props);
     return (
         <div className="">
             <div className="useroptions">
-                <h3 className="loggedinuser">Welcome _username_!</h3>
+                <h3 className="loggedinuser">Welcome {props.username}!</h3>
                 
                     <div className="viewprogress">
                 <Link to={"/viewprogress"}>

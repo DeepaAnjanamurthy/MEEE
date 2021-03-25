@@ -40,18 +40,25 @@ class App extends Component {
     this.postUserData();
   }
   
+
   // post request to check for user credentials
   postUserData = () => {
     axios
-    .post(`${apiUrl}/login`, {username: "test", password: "test"})
+    // .post(`${apiUrl}/login`, {username: "test", password: "test"})
     // .post(`${apiUrl}/login`)
+    .post(`${apiUrl}/userAuth/login`, 
+      {
+        username: this.state.username,
+        password: this.state.password
+      }
+    )
     .then((response) => {
       sessionStorage.authToken = response.data.token;
       console.log(response)
       // console.log(response.data);      
       this.setState({
-        username: response.data.username,
-        password: response.data.password,
+        // username: response.data.username,
+        // password: response.data.password,
         userLoggedIn: true
       });
     })
@@ -72,7 +79,6 @@ class App extends Component {
         <Navbar 
          userLoggedIn={this.state.userLoggedIn}
          handleSignOut={this.handleSignOut}
-        //  Pass function to logout and setstate
         />
         <Switch>
           <Route path="/" exact>
@@ -86,11 +92,12 @@ class App extends Component {
               <div className="login__container">
                 <h2 className="login__form-header">Login to begin</h2>
                 {/* <form className="login__form" onSubmit={this.handleSubmit}> */}
-                  <form className="login__form">
+                  <form className="login__form" onSubmit={this.handleLogin}>
                     <h3 className="login__form-label">User Name</h3>
                     <input
                       className="login__form-uname"
                       type="text"
+                      name="username"
                       placeholder="username"
                       value={this.state.username}
                       onChange={this.handleChangeName}
@@ -99,6 +106,7 @@ class App extends Component {
                     <input
                       className="login__form-password"
                       type="password"
+                      name="password"
                       placeholder="password"
                       value={this.state.password}
                       onChange={this.handleChangePwd}
@@ -106,7 +114,7 @@ class App extends Component {
                     <div className="btns">
                       <button className="login__form-btn cbtn">Cancel</button>
                       {/* <Link to={"/welcome"}> */}
-                        <button className="login__form-btn" onClick={this.handleLogin} >Login</button>
+                        <button className="login__form-btn" type="submit"  >Login</button>
                       {/* </Link> */}
                     </div>
                   </form>

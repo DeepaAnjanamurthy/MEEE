@@ -3,7 +3,7 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
-const JWT_KEY= process.env.JWT_KEY;
+const JWT_KEY = process.env.JWT_KEY;
 
 // create a .get route for a user
 router.get("/",
