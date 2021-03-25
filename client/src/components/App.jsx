@@ -90,7 +90,7 @@ class App extends Component {
             <div className="mainpage">
               <img className="mainimage" src={chakraImg} alt="seven chakras" />
               <div className="login__container">
-                <h2 className="login__form-header">Login to begin</h2>
+                <h2 className="login__form-header">Login to Begin</h2>
                 {/* <form className="login__form" onSubmit={this.handleSubmit}> */}
                   <form className="login__form" onSubmit={this.handleLogin}>
                     <h3 className="login__form-label">User Name</h3>
