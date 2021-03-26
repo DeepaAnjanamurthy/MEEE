@@ -2,23 +2,47 @@
     {   
         "noteid":"ZGOJYHGU",
         "id": 1,
-        "timestamp": 1616053600000,
-        "chakra": 7,
+        "timestamp": 1616655570000,
+        "chakra": 6,
         "Note": "feel energised after session"
+    },
+
+    {
+        "noteid":"8YAK2XVA",
+        "id": 1,
+        "timestamp": 1616569170000,
+        "chakra": 3,
+        "Note": "need to work more on this chakra"
+    },
+    
+    {
+        "noteid":"LFBZ1C79",
+        "id": 1,
+        "timestamp": 1616482770000,
+        "chakra": 2,
+        "Note": "saw vivid colors"
     },
     {
         "noteid":"BTWVYQLT",
         "id": 1,
-        "timestamp": 1616107111000,
+        "timestamp": 1616223570000,
         "chakra": 4,
         "Note": "feel relaxed"
     },
     {
         "noteid":"G23HIXB1",
         "id": 1,
-        "timestamp": 1616055671000,
-        "chakra": 3,
+        "timestamp": 1616137170000,
+        "chakra": 5,
         "Note": "excellent session"
+    },
+    {
+        "noteid":"8U0J4RNT",
+        "id": 1,
+        "timestamp": 1615964370000,
+        "chakra": 1,
+        "Note": "grounding feeling after session"
     }
+    
     
 ]

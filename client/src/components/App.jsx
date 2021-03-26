@@ -112,7 +112,7 @@ class App extends Component {
                     <div className="btns">
                       <button className="login__form-btn cbtn">Cancel</button>
                       {/* <Link to={"/welcome"}> */}
-                        <button className="login__form-btn" type="submit"  >Login</button>
+                        <button className="login__form-btn" type="submit">Login</button>
                       {/* </Link> */}
                     </div>
                   </form>

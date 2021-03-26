@@ -23,6 +23,7 @@ router.post("/", async (req, res) => {
         const salt = await bcrypt.genSalt();
         const hashedPassword = await bcrypt.hash(req.body.password, salt);
         const users = JSON.parse(loadUsers());
+        // create a random user id
         const user = {username: req.body.username, password: hashedPassword}
         
         users.push(user);

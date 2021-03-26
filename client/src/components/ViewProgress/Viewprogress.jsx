@@ -27,16 +27,15 @@ componentDidMount(){
 
 }
     getUserNotes = (id,token) => {
-
             axios
             .get(`${apiUrl}/notes/${id}`,{headers: {'Authorization': `Basic ${token}`}})
             // .get(`${apiUrl}/notes/${id}`)
             .then((response) => {
             //   console.log(response)
             //   console.log(response.data);   
-              this.setState({
-                  notes:response.data
-              });   
+            this.setState({
+                notes:response.data
+            });   
             })
             .catch((error) => console.log(error));
         }

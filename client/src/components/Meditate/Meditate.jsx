@@ -38,7 +38,7 @@ render(){
                 <Link to={"/welcome"}>
                     <img className="backicon" src={backIcon} alt="back icon"/>
                 </Link>
-                <h2 className="pageheading">Meditate</h2>
+                <h2 className="pageheading">Options</h2>
             </div>
             <div className="container">
                 <div className="chakracard card">
