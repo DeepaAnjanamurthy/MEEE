@@ -52,7 +52,7 @@ class App extends Component {
     )
     .then((response) => {
       sessionStorage.authToken = response.data.token;
-      console.log(response)
+      // console.log(response)
       // console.log(response.data);      
       this.setState({
         userLoggedIn: true
