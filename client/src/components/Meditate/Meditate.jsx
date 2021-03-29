@@ -44,7 +44,9 @@ render(){
                 <div className="chakracard card">
                     <div className="card-side front">
                         <h2 className="chakraheading">{this.state.content.name}</h2>
-                        <img className="chakraimg" src={crownImg} alt="charka img"/>
+                        <img className="chakraimg" src={crownImg} alt="charka img" />
+                        {/* How to serve static images from images.json in server side */}
+                        {/* <img className="chakraimg" alt="charka img">{this.state.content.image} </img> */}
                         <p className="clickformore">click here to learn more</p>
                     </div>
                     <div className="chakrainfo card-side back">

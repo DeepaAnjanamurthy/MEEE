@@ -19,7 +19,7 @@ router.post("/", (req, res)=>{
             const payload ={
                 // username:req.body.username,
                 username: user.name
-                //  can use user avatar here, likes 
+                //  can use user avatar, likes here
             }
             const token = jwt.sign(payload, JWT_KEY, {expiresIn: '1hr'});
             res.json({token});

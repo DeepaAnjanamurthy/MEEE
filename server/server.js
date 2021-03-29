@@ -38,43 +38,5 @@ app.get('/', (req, res)=>{
 
 app.listen(PORT, console.log(`Server listening at: http://localhost:${PORT}`));
 
-// const user = {name: "test", password: "test" }
-// app.route('/login')
-//     .post((req, res)=>{
-//         // Find user in users json file, if same as req data, send payload
-//         if(user.name === req.body.username && user.password === req.body.password){
-//             const payload ={
-//                 // username:req.body.username,
-//                 username: user.name
-//                 //  can use user avatar here, likes 
-//             }
-//             const token = jwt.sign(payload, JWT_KEY, {expiresIn: '1hr'});
-//             res.json({token});
-//         } else{
-//             res.json({message: "username and password not found "})
-//         }
-// })
-
-
-// app.route('/user')
-//     .get((req, res) =>{
-//         console.log(req.headers);
-//         const tokenData = req.headers.authorization ? req.headers.authorization : '';
-        
-//         const token = tokenData.split(' ')[1];
-//         jwt.verify(token, JWT_KEY, (err, decodedData) =>{
-//             if(err){
-//                 res.status(403).json({error: 'Token not authorized or it has expired'});
-//             } else {
-//                 res.json(decodedData);
-//             }
-//         })
-//     })
-//     .post((req, res) => {
-//         console.log(req.body);
-//         // add user info to users.json
-//         res.send('request to add user recieved');
-//     })
-
 
 

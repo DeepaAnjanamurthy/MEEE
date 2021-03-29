@@ -57,4 +57,24 @@ router.post("/login", async (req,res) => {
     }
 })
 
+router.post('/verify',
+    (req, res) =>{
+        // console.log(req.headers);
+        const tokenData = req.headers.authorization ? req.headers.authorization : '';
+        
+        const token = tokenData.split(' ')[1];
+        jwt.verify(token, JWT_KEY, (err, decodedData) =>{
+            if(err){
+                res.status(403).json({error: 'Token not authorized or it has expired'});
+            } else {
+                res.json(decodedData);
+            }
+        })
+    })
+    // .post((req, res) => {
+    //     console.log(req.body);
+    //     // add user info to users.json
+    //     res.send('request to add user recieved');
+    // })
+
 module.exports = router;

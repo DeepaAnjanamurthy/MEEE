@@ -9,7 +9,7 @@ function loadNotes(){
 // Create Route to get all notes for single user
 router.get("/:id", (req,res) => {
     const notes = JSON.parse(loadNotes());
-    console.log(req.params.id);
+    // console.log(req.params.id);
     // console.log(notes);
     const filteredNotes = notes.filter((usernotes) =>{
         return usernotes.id == req.params.id;
