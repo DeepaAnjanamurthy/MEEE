@@ -1,3 +1,7 @@
+// TO DO:
+// 1. Implement register user -> create a new component
+// 2. Implement about -> include info about the app and link to chakra info
+// 3. Implement contact us section -> create a simple form to contact 
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.scss';

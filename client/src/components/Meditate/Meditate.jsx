@@ -46,6 +46,7 @@ render(){
                         <h2 className="chakraheading">{this.state.content.name}</h2>
                         <img className="chakraimg" src={crownImg} alt="charka img" />
                         {/* How to serve static images from images.json in server side */}
+                        {/* https://expressjs.com/en/starter/static-files.html */}
                         {/* <img className="chakraimg" alt="charka img">{this.state.content.image} </img> */}
                         <p className="clickformore">click here to learn more</p>
                     </div>

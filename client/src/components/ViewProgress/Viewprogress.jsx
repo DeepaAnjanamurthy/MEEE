@@ -1,3 +1,6 @@
+// TO DO:
+// 1. Implement delete and edit functionality
+
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';

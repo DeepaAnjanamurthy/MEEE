@@ -1,3 +1,6 @@
+// TO DO:
+// 1. Dynamically pass the video id according to the chakra selected
+
 import React from 'react';
 import { Link } from "react-router-dom";
 

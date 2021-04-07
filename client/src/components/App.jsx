@@ -1,3 +1,7 @@
+// TO DO:
+// 1. Complete login implementation
+// 2. Form validation implemetation
+
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
