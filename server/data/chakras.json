@@ -2,7 +2,7 @@
 	{
         "id" : 7 ,
         "name": "Crown chakra",
-        "image": "./assets/images/crown.png",
+        "image": "/static/images/crown.png",
         "sanskritname": "Sahasrara",
         "element": "Thought, understanding",
         "function": "Understanding",

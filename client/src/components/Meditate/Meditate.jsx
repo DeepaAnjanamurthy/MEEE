@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Meditate.scss';
 import backIcon from '../../assets/icons/left-arrow.png';
-import crownImg from '../../assets/images/crown.png';
+// import crownImg from '../../assets/images/crown.png';
 
 import axios from 'axios';
 
@@ -31,7 +31,7 @@ getChakraInfo = () => {
   }
 
 render(){
-    // console.log(this.state.content);
+    console.log(this.state.content);
     return (
         <div>
             <div className="pagetitle">
@@ -44,10 +44,10 @@ render(){
                 <div className="chakracard card">
                     <div className="card-side front">
                         <h2 className="chakraheading">{this.state.content.name}</h2>
-                        <img className="chakraimg" src={crownImg} alt="charka img" />
+                        {/* <img className="chakraimg" src={crownImg} alt="charka img" /> */}
                         {/* How to serve static images from images.json in server side */}
                         {/* https://expressjs.com/en/starter/static-files.html */}
-                        {/* <img className="chakraimg" alt="charka img">{this.state.content.image} </img> */}
+                        <img className="chakraimg" alt="charka img" src={this.state.content.image} />
                         <p className="clickformore">click here to learn more</p>
                     </div>
                     <div className="chakrainfo card-side back">
