@@ -2,7 +2,7 @@
 	{
         "id" : 7 ,
         "name": "Crown chakra",
-        "image": "/static/images/crown.png",
+        "image": "https://i.imgur.com/Ban3DDP.png",
         "sanskritname": "Sahasrara",
         "element": "Thought, understanding",
         "function": "Understanding",
@@ -18,7 +18,7 @@
 	{
     "id" : 6,
     "name": "Brow chakra",
-    "image": "",
+    "image": "https://i.imgur.com/Sr3eVZQ.png",
     "sanskritname": "Ajna",
     "element": "Light",
     "function": "Seeing, intuiting",
@@ -34,7 +34,7 @@
     {
         "id" : 5,
         "name": "Throat chakra",
-        "image": "",
+        "image": "https://i.imgur.com/p3dmCws.png",
         "sanskritname": "Vishuddha",
         "element": "Sounds",
         "function": "Communication, creativity",
@@ -50,7 +50,7 @@
     {
         "id" : 4,
         "name": "Heart chakra",
-        "image": "",
+        "image": "https://i.imgur.com/o2BXgq4.png",
         "sanskritname": "Anahata",
         "element": "Air",
         "function": "Love",
@@ -66,7 +66,7 @@
     {
         "id" : 3,
         "name": "Solar plexus chakra",
-        "image": "",
+        "image": "https://i.imgur.com/Zl9vwHI.png",
         "sanskritname": "Manipura",
         "element": "Fire",
         "function": "Will, power",
@@ -82,7 +82,7 @@
     {
         "id" : 2,
         "name": "Sacral chakra",
-        "image": "/images/solar.png",
+        "image": "https://i.imgur.com/vrTRgdD.png",
         "sanskritname": "Swadhisthana",
         "element": "Water",
         "function": "Desire, pleasure, sexuality, procreation",
@@ -98,7 +98,7 @@
     {
         "id" : 1,
         "name": "Root chakra",
-        "image": "",
+        "image": "https://i.imgur.com/GfDDYCJ.png",
         "sanskritname": "Muladhara",
         "element": "Earth",
         "function": "Survival, grounding",

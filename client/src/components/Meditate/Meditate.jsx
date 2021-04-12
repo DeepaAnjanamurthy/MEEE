@@ -31,7 +31,7 @@ getChakraInfo = () => {
   }
 
 render(){
-    console.log(this.state.content);
+    // console.log(this.state.content);
     return (
         <div>
             <div className="pagetitle">
@@ -47,6 +47,7 @@ render(){
                         {/* <img className="chakraimg" src={crownImg} alt="charka img" /> */}
                         {/* How to serve static images from images.json in server side */}
                         {/* https://expressjs.com/en/starter/static-files.html */}
+                        {/* <img className="chakraimg" alt="charka img" src={process.env.PUBLIC_URL + 'static/images/crown.png'} />; */}
                         <img className="chakraimg" alt="charka img" src={this.state.content.image} />
                         <p className="clickformore">click here to learn more</p>
                     </div>
