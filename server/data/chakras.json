@@ -8,11 +8,9 @@
         "function": "Understanding",
         "bodyparts":"Pituitary gland, Cerebral cortex, Central nervous system",
         "malfunction":"Depression, alienation, confusion, boredom, apathy, inability to learn or comprehend",
-        "videoids":[
-            {"15min": "WMJ8ZyQuOxQ"},
-            {"30min": "Mrr4dK5Nja0"},
-            {"60min": "vq4TZexuG9Y"}
-        ]
+        "vidshort": "WMJ8ZyQuOxQ",
+        "vidmedium": "Mrr4dK5Nja0",
+        "vidlong": "vq4TZexuG9Y"
     },
 
 	{
@@ -24,11 +22,9 @@
     "function": "Seeing, intuiting",
     "bodyparts":"Eyes, Pineal gland",
     "malfunction":"Blindness, headaches, nightmares, eyestrain, blurred vision",
-        "videoids":[
-            {"15min": "KtIYER-TUr8"},
-            {"30min": "e7bG7-KTi2c"},
-            {"60min": "KTwTX60yhfw"}
-        ]
+    "vidshort": "KtIYER-TUr8",
+    "vidmedium": "e7bG7-KTi2c",
+    "vidlong": "KTwTX60yhfw"
     },
 
     {
@@ -40,11 +36,9 @@
         "function": "Communication, creativity",
         "bodyparts":"Neck, shoulders, arms, hands, thyroid gland, parathyroid gland",
         "malfunction":"Sore throat, stiff neck, colds, thyroid problems, hearing problems",
-        "videoids":[
-            {"15min": "DY3ROsPyw68"},
-            {"30min": "y5YFSXiesCQ"},
-            {"60min": "rHNwxokBMgE"}
-        ]
+        "vidshort": "DY3ROsPyw68",
+        "vidmedium": "y5YFSXiesCQ",
+        "vidlong": "rHNwxokBMgE"
     },
 
     {
@@ -56,11 +50,9 @@
         "function": "Love",
         "bodyparts":"Thymus gland, lungs, heart, arms, hands",
         "malfunction":"Asthma, high blood pressure, heart disease, lung disease",
-        "videoids":[
-            {"15min": "uvpPO9fmC_I"},
-            {"30min": "mFADY5TF2b0"},
-            {"60min": "9g77z9WAMkU"}
-        ]
+        "vidshort": "uvpPO9fmC_I",
+        "vidmedium": "mFADY5TF2b0",
+        "vidlong": "9g77z9WAMkU"
     },
 
     {
@@ -72,11 +64,9 @@
         "function": "Will, power",
         "bodyparts":"Pancreas, adrenals, digestive system, muscles",
         "malfunction":"Ulcers, diabetes, hypoglycemia",
-        "videoids":[
-            {"15min": "XEenfsm92M4"},
-            {"30min": "1b7NbeHm710"},
-            {"60min": "t3xI5aL4Z7Y"}
-        ]
+        "vidshort": "XEenfsm92M4",
+        "vidmedium": "1b7NbeHm710",
+        "vidlong": "t3xI5aL4Z7Y"
     },
 
     {
@@ -88,11 +78,9 @@
         "function": "Desire, pleasure, sexuality, procreation",
         "bodyparts":"Ovaries, testicles, womb, genitals, kidney, bladder, circulatory system",
         "malfunction":"Impotence, frigidity, uterine, bladder or kidney trouble, stiff low back",
-        "videoids":[
-            {"15min": "OONFKPHEgYY"},
-            {"30min": "J3Nn4KyVna8"},
-            {"60min": "QSrFajsixcM"}
-            ]
+        "vidshort": "OONFKPHEgYY",
+        "vidmedium": "J3Nn4KyVna8",
+        "vidlong": "QSrFajsixcM"
     },
 
     {
@@ -104,10 +92,8 @@
         "function": "Survival, grounding",
         "bodyparts":"Adrenals, legs, feet, bones, large intestine",
         "malfunction":"Obesity, hemorrhoids, constipation, sciatica, degenerative arthritis, anorexia nervosa, knee troubles",
-        "videoids":[
-            {"15min": "ZXiNRJoiOfw"},
-            {"30min": "fyAREUfq_Gk"},
-            {"60min": "kYfAM9KhUDM"}
-        ]
+        "vidshort": "ZXiNRJoiOfw",
+        "vidmedium": "fyAREUfq_Gk",
+        "vidlong": "kYfAM9KhUDM"
     }
 ]

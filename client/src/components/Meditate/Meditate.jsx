@@ -32,6 +32,7 @@ getChakraInfo = () => {
 
 render(){
     // console.log(this.state.content);
+    // console.log(this.state.match.params);
     return (
         <div>
             <div className="pagetitle">
@@ -75,20 +76,22 @@ render(){
                     </div>
                 </div>
                 <div className="options">
-                    <Link className="linkchakra" to={`/meditatechakra/${this.props.match.params.id}/WMJ8ZyQuOxQ`}>
+                    <Link className="linkchakra" 
+                        to={`/meditatechakra/${this.props.match.params.id}/${this.state.content.vidshort}`}>
                       {/* <Link to={`/meditatechakra/${this.props.match.params.id}/${this.state.content.videoids.15min}`}> */}
                       {/* <Link to={`/meditatechakra/7/WMJ8ZyQuOxQ`}> */}
                         <div className="optioncard">
                             <h2>Meditate for 15 minutes</h2>
                         </div>
                     </Link>    
-                    <Link className="linkchakra" to={`/meditatechakra/${this.props.match.params.id}/Mrr4dK5Nja0`}>
+                    <Link className="linkchakra" 
+                        to={`/meditatechakra/${this.props.match.params.id}/${this.state.content.vidmedium}`}>
                         <div className="optioncard">
                             <h2>Meditate for 30 minutes</h2>
                         </div>
                     </Link>
 
-                    <Link className="linkchakra" to={`/meditatechakra/${this.props.match.params.id}/vq4TZexuG9Y`}>
+                    <Link className="linkchakra" to={`/meditatechakra/${this.props.match.params.id}/${this.state.content.vidlong}`}>
                         <div className="optioncard">
                             <h2>Meditate for 60 minutes</h2>
                         </div>
