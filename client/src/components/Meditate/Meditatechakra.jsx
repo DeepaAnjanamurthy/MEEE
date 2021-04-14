@@ -37,7 +37,7 @@ class Meditatechakra extends React.Component{
         <div className="meditatechakra">
             <div>
                 <div className="medpagetitle">
-                    <Link to={`/chakra/7`}>
+                    <Link to={`/welcome`}>
                         <img className="backicon" src={backIcon} alt="back icon"/>
                     </Link>
                     <h3 className="pageheading">Meditate</h3>
@@ -46,7 +46,9 @@ class Meditatechakra extends React.Component{
                     <p className="instructions">Find a quiet, soft lit space for meditation</p>
                     <p className="instructions">Seated position is ideal, however may be done lying down</p>
                     <p className="instructions">Use earphones/ earbuds to get the best experience</p>
-                    <p className="instructions">Once meditation is complete, click <span className="bold">Meditation Complete</span> to record your experience</p>
+                    <p className="instructions">Once meditation is complete, click <span className="bold">
+                        Meditation Complete</span> to record your experience
+                    </p>
             </div>
             <div className="videoplayer">
                 <Videoplayer
