@@ -1,10 +1,13 @@
 ## Meee
 Description of the project
 
-<h1 align="center">
+<h1>
   <br>
   <img src="https://i.imgur.com/itBF8TL.jpg" alt="" width="">
 </h1>
+
+## Motivation
+
 ## Demo
 
 ## Getting Started
