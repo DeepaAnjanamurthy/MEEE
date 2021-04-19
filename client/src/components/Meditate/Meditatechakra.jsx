@@ -1,5 +1,3 @@
-// TO DO:
-// 1. Dynamically pass the video id according to the chakra selected
 
 import React from 'react';
 import { Link } from "react-router-dom";
@@ -46,8 +44,8 @@ class Meditatechakra extends React.Component{
                     <p className="instructions">Find a quiet, soft lit space for meditation</p>
                     <p className="instructions">Seated position is ideal, however may be done lying down</p>
                     <p className="instructions">Use earphones/ earbuds to get the best experience</p>
-                    <p className="instructions">Once meditation is complete, click <span className="bold">
-                        Meditation Complete</span> to record your experience
+                    <p className="instructions">Once meditation is complete, click 
+                        <span className="bold">Meditation Complete</span> to record your experience
                     </p>
             </div>
             <div className="videoplayer">
@@ -56,7 +54,9 @@ class Meditatechakra extends React.Component{
                 />
                 <div className="cards">
                     <div className="completecard" id="hide">
-                        <button className="cardbtn btn"  onClick={()=>this.handleToggleClick()}>Meditation Complete</button>
+                        <button className="cardbtn btn"  
+                                onClick={()=>this.handleToggleClick()}>Meditation Complete
+                        </button>
                     </div>
                     {this.state.isClicked ?  
                             <form className="experience">
