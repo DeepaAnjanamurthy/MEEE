@@ -37,6 +37,10 @@ class App extends Component {
     this.setState({password: event.target.value});
   }
 
+  handleCancelClick(e) {
+    // e.preventDefault();
+    this.setState({username: '', password: ''});
+}
   // Upon clicking login button
   handleLogin = (event) => {
     event.preventDefault();
@@ -114,7 +118,10 @@ class App extends Component {
                       onChange={this.handleChangePwd}
                     />
                     <div className="btns">
-                      <button className="login__form-btn cbtn">Cancel</button>
+                      <button className="login__form-btn cbtn"
+                              onClick={()=>this.handleCancelClick()}
+                              >Cancel
+                      </button>
                       {/* <Link to={"/welcome"}> */}
                         <button className="login__form-btn" type="submit">Login</button>
                       {/* </Link> */}
