@@ -30,6 +30,14 @@ class Meditatechakra extends React.Component{
         this.setState({value: event.target.value});
     }
 
+    handleSave =(event) =>{
+
+    }
+
+    handleCancel = (event) => {
+        event.preventdefault();
+    }
+
     render(){
     return (
         <div className="meditatechakra">
