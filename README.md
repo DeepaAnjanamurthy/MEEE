@@ -1,3 +1,5 @@
+
+
 ## MEEE
 MEEE is a full stack application, designed for short, medium length meditation tracks for new and experienced *chakra* meditators. The app will focus on the 7 main *chakras*, and play meditation tracks from YouTube on a video player within the app. It also helps meditators record their experience after each session and view their meditation progress.
 
