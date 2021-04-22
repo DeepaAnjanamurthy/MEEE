@@ -30,12 +30,17 @@ class Meditatechakra extends React.Component{
         this.setState({value: event.target.value});
     }
 
-    handleSave =(event) =>{
-
+    handleSaveClick =(event) =>{
+        alert("Notes saved successfully!");
     }
 
-    handleCancel = (event) => {
-        event.preventdefault();
+    formSubmit = (e) => {
+        e.preventDefault();
+    }
+
+    handleCancelClick(e) {
+        // e.preventDefault();
+        this.setState({value: ''});
     }
 
     render(){
@@ -53,7 +58,7 @@ class Meditatechakra extends React.Component{
                     <p className="instructions">Seated position is ideal, however may be done lying down</p>
                     <p className="instructions">Use earphones/ earbuds to get the best experience</p>
                     <p className="instructions">Once meditation is complete, click 
-                        <span className="bold">Meditation Complete</span> to record your experience
+                        <span className="bold"> Meditation Complete</span> to record your experience
                     </p>
             </div>
             <div className="videoplayer">
@@ -67,15 +72,22 @@ class Meditatechakra extends React.Component{
                         </button>
                     </div>
                     {this.state.isClicked ?  
-                            <form className="experience">
+                            <form className="experience" onSubmit={this.formSubmit}>
                                 <h4 className="experiencelabel">After meditation, I feel... </h4>
                                 <textarea className="exptext" placeholder="Write how you feel here" 
                                     onChange={this.handleChange} 
                                     value={this.state.value} >
                                 </textarea>
                                 <div className="form__btns">
-                                    <button className="form__btn btn cbtn">Cancel</button>
-                                    <button className="form__btn btn">Save</button>
+                                    <button className="form__btn btn cbtn"
+                                        onClick={()=>this.handleCancelClick()}>Cancel
+                                    </button>
+                                    
+                                    <button typeof="submit" 
+                                            onClick={this.handleSaveClick}
+                                            className="form__btn btn sbtn"><Link className="form__btn btn" to="/welcome">Save</Link>
+                                    
+                                    </button>
                                 </div>
                             </form> 
                         : 
