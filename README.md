@@ -10,7 +10,7 @@ MEEE is a full stack application, designed for short, medium length meditation t
 As a requirement for the completion of Web Dev dimploma at BrainStation, I had to create a project within a short span of 2 weeks to demonstrate understanding of course content. Having been a meditator for over a decade, I decided to meditate on it and *voila*... this idea popped!! I decided to bring to life a glimpse of a technique that I use as part of my self-discovery journey and what I wished was out there for other meditators along their journeys.
 
 ## Demo
-[![Watch the video](https://i.imgur.com/eCDy1JV.jpg)](https://youtu.be/8QDn2VAd0AY)
+[![Watch the video]](https://youtu.be/8QDn2VAd0AY)
 
 ## Getting Started
 
