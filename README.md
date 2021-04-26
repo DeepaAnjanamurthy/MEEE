@@ -35,8 +35,6 @@ $ cd server
 $ npm install 
 ```
 
-For example: `npm install axios`
-
 Start the server:
 
 ```sh
